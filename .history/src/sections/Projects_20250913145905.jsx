@@ -8,23 +8,23 @@ const Projects = () => {
   const y = useMotionValue(0);
   const springX = useSpring(x, { damping: 10, stiffness: 50 });
   const springY = useSpring(y, { damping: 10, stiffness: 50 });
-
+  
   const handleMouseMove = (e) => {
     x.set(e.clientX + 20);
     y.set(e.clientY + 20);
   };
-
+  
   const [preview, setPreview] = useState(null);
-
+  
   // Helper function to determine if the file is a video
   const isVideo = (url) => {
     if (!url) return false;
     const videoExtensions = ['.mp4', '.webm', '.ogg', '.mov', '.avi'];
-    return videoExtensions.some(ext =>
+    return videoExtensions.some(ext => 
       url.toLowerCase().includes(ext.toLowerCase())
     );
   };
-
+  
   return (
     <section
       id="projects"

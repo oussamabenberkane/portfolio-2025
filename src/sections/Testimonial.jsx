@@ -13,7 +13,7 @@ const ReviewCard = ({ img, name, username, body }) => {
     >
       <div className="flex flex-row items-center gap-2">
         <img
-          className="rounded-full bg-white/10"
+          className="rounded-full bg-white/20"
           width="32"
           height="32"
           alt=""
@@ -34,7 +34,7 @@ const ReviewCard = ({ img, name, username, body }) => {
 export default function Testimonial() {
   return (
     <div className="items-start mt-25 md:mt-35 c-space">
-      <h2 className="text-heading">Hear From My Clients</h2>
+      <h2 className="text-heading">Life Outside Work</h2>
       <div className="relative flex flex-col items-center justify-center w-full mt-12 overflow-hidden">
         <Marquee pauseOnHover className="[--duration:20s]">
           {firstRow.map((review) => (

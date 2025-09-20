@@ -7,6 +7,7 @@ const Project = ({
   subDescription,
   href,
   image,
+  logo,
   tags,
   setPreview,
 }) => {
@@ -19,13 +20,30 @@ const Project = ({
         onMouseLeave={() => setPreview(null)}
       >
         <div>
-          <p className="text-2xl">{title}</p>
-          <div className="flex gap-5 mt-2 text-sand">
-            {tags.map((tag) => (
-              <span key={tag.id}>{tag.name}</span>
-            ))}
-          </div>
-        </div>
+  <div className="flex items-center gap-3">
+    {/* Project logo */}
+    <img
+      src={logo}
+      alt={`${title} logo`}
+      className="w-8 h-8 object-contain rounded-md shadow-sm"
+    />
+    <p className="text-2xl font-semibold text-neutral-200">{title}</p>
+  </div>
+
+  {/* Tags */}
+  <div className="flex flex-wrap gap-3 mt-2 text-sand text-sm">
+    {tags.map((tag) => (
+      <span
+        key={tag.id}
+        className="flex items-center gap-1 px-2 py-1 bg-neutral-800 rounded-md"
+      >
+        <img src={tag.path} alt={tag.name} className="w-4 h-4" />
+        {tag.name}
+      </span>
+    ))}
+  </div>
+</div>
+
         <button
           onClick={() => setIsHidden(true)}
           className="flex items-center gap-1 cursor-pointer hover-animation"
