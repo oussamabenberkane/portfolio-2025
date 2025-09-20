@@ -41,9 +41,30 @@ export const myProjects = [
             { id: 5, name: "React Native", path: "/assets/logos/react.svg" },
             { id: 6, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
         ],
-    },
-    {
+    }, {
         id: 3,
+        title: "Esprit Livre Bookstore",
+        description:
+            "E-commerce platform for an Algerian bookstore with multilingual support and full order management.",
+        subDescription: [
+            "📚 Mobile-first bookstore app with catalog browsing, search, filters, and secure checkout.",
+            "🌍 Multilingual (FR/EN/AR) with RTL support, making it accessible to a wide audience.",
+            "🛒 Admin panel for managing books, orders, users, and analytics with real-time updates.",
+        ],
+        href: "https://espritlivre.com",
+        logo: "/assets/logos/coming-soon.png",
+        image: "/assets/projects/coming-soon.mp4",
+        tags: [
+            { id: 1, name: "Java", path: "/assets/logos/java.svg" },
+            { id: 2, name: "Spring Boot", path: "/assets/logos/spring.svg" },
+            { id: 3, name: "PostgreSQL", path: "/assets/logos/postgresql.svg" },
+            { id: 4, name: "React", path: "/assets/logos/react.svg" },
+            { id: 6, name: "TailwindCSS", path: "/assets/logos/tailwindcss.svg" },
+        ],
+    }
+    ,
+    {
+        id: 4,
         title: "Barreau de Béjaïa Portal",
         description:
             "Official web portal for 1,000+ lawyers with multilingual support and document system.",
@@ -67,7 +88,7 @@ export const myProjects = [
 export const mySocials = [
     {
         name: "WhatsApp",
-        href: "",
+        href: "https://wa.me/213549697533?text=Hello%20Oussama,%20I%20found%20your%20portfolio!",
         icon: "/assets/socials/whatsApp.svg",
     },
     {
@@ -122,14 +143,14 @@ export const experiences = [
             "🎯 Delivered the solution as a decision-support and training tool, reducing dependency on real patient cases in early-stage education.",
         ],
     },
-    {
-        title: "Rival School · Part Time",
-        job: "Apr 2023 - Jun 2023",
-        date: "Coding Instructor",
-        contents: [
-            "👨‍🏫 Introduced students to Python fundamentals, core programming principles, and problem-solving strategies through engaging, hands-on lessons.",
-        ],
-    },
+    // {
+    //     title: "Rival School · Part Time",
+    //     job: "Apr 2023 - Jun 2023",
+    //     date: "Coding Instructor",
+    //     contents: [
+    //         "👨‍🏫 Introduced students to Python fundamentals, core programming principles, and problem-solving strategies through engaging, hands-on lessons.",
+    //     ],
+    // },
 ];
 
 export const reviews = [

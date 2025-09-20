@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 
 const HeroText = () => {
 
-    const words = ["Multi-platform", "AI-Powered"];
+    const words = ["AI-Powered", "Robust", "Scalable", "Innovative"];
     const variants = {
         hidden: { opacity: 0, x: -50 },
         visible: { opacity: 1, x: 0 }
@@ -21,7 +21,7 @@ const HeroText = () => {
                     animate="visible"
                     transition={{ delay: 1 }}
                 >
-                    Hey there 👋
+                    Hey there, I'm Oussama!
                 </motion.h1>
                 <div className='flex flex-col items-start'>
                     <motion.p className='text-5xl font-medium text-neutral-300'
@@ -29,20 +29,20 @@ const HeroText = () => {
                         initial="hidden"
                         animate="visible"
                         transition={{ delay: 1.2 }}
-                    > I build</motion.p>
+                    >As an AI graduate and Backend Engineer, <br /> I building</motion.p>
                     <motion.div
                         variants={variants}
                         initial="hidden"
                         animate="visible"
                         transition={{ delay: 1.5 }}> <FlipWords words={words}
-                            className="font-black text-white text-7xl" />
+                            className="font-black text-white text-8xl" />
                     </motion.div>
                     <motion.p className='text-4xl font-medium text-neutral-300'
                         variants={variants}
                         initial="hidden"
                         animate="visible"
                         transition={{ delay: 1.8 }}
-                    >apps.</motion.p>
+                    >solutions.</motion.p>
                 </div>
             </div>
             {/* Mobile View */}
@@ -51,7 +51,7 @@ const HeroText = () => {
                     variants={variants}
                     initial="hidden"
                     animate="visible"
-                    transition={{ delay: 1 }}>Hey 👋</motion.p>
+                    transition={{ delay: 1 }}>Hey there, I'm Oussama!</motion.p>
                 <div>
                     <motion.p className='text-5xl font-black text-neutral-300'
                         variants={variants}
@@ -66,14 +66,14 @@ const HeroText = () => {
                         animate="visible"
                         transition={{ delay: 1.5 }}>
                         <FlipWords words={words}
-                            className="font-black text-white text-5xl" />
+                            className="font-black text-white text-7xl" />
                     </motion.div>
                     <motion.p className='text-4xl font-black text-neutral-300'
                         variants={variants}
                         initial="hidden"
                         animate="visible"
                         transition={{ delay: 1.8 }}>
-                        apps.
+                        solutions
                     </motion.p>
                 </div>
             </div>

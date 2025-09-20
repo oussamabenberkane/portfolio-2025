@@ -134,7 +134,7 @@ const About = () => {
             <div className='grid-default-color grid-5'>
                 <div className='z-10 w-[50%]'>
                     <p className='headText'>Teck Stack</p>
-                    <p className='headText'>Over the years, I’ve picked up a stack of languages and frameworks that help me craft clean backends, smart AI solutions, and smooth user experiences</p>
+                    <p className='headText'>Over the years, I’ve picked up a stack of languages and frameworks</p>
                 </div>
                 <div className='absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] ms:scale-125'>
                     <Frameworks />

@@ -29,9 +29,9 @@ const Navbar = () => {
         <div className="fixed inset-x-0 z-20 w-full backdrop-blur-lg bg-primary/40">
             <div className="mx-auto c-space max-w-7xl">
                 <div className="flex items-center justify-between py-2 sm:py-0">
-                    <a href="/" className="flex items-center gap-x-3 text-xl font-bold transition-colors
+                    <a href="/" className="text-xl font-bold transition-colors
                     text-neutral-400 hover:text-white">
-                        <img src="assets/logos/ouss.png" alt="logo" className="w-15 h-13 rounded-full" />
+                        <img src="assets/logos/ouss.png" alt="logo" className="w-10 h-8 rounded-full" />
                         Oussama Benberkane
                     </a>
                     <button onClick={() => setIsOpen(!isOpen)} className="flex cursor-pointer text-neutral-400 hover:text-white focus:outline-none sm:hidden">
