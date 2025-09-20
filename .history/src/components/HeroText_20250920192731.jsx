@@ -1,9 +1,7 @@
-import { FlipWords } from './FlipWords'
 import { motion } from 'motion/react';
 
 const HeroText = () => {
 
-    const words = ["Multi-platform", "AI-Powered"];
     const variants = {
         hidden: { opacity: 0, x: -50 },
         visible: { opacity: 1, x: 0 }
@@ -34,8 +32,8 @@ const HeroText = () => {
                         variants={variants}
                         initial="hidden"
                         animate="visible"
-                        transition={{ delay: 1.5 }}> <FlipWords words={words}
-                            className="font-black text-white text-7xl" />
+                        transition={{ delay: 1.5 }}> <motion.p
+                            className="font-black text-white text-7xl">AI-Powered</motion.p>
                     </motion.div>
                     <motion.p className='text-4xl font-medium text-neutral-300'
                         variants={variants}
@@ -65,15 +63,15 @@ const HeroText = () => {
                         initial="hidden"
                         animate="visible"
                         transition={{ delay: 1.5 }}>
-                        <FlipWords words={words}
-                            className="font-black text-white text-5xl" />
+                        <motion.p
+                            className="font-black text-white text-5xl">Multi-platform</motion.p>
                     </motion.div>
                     <motion.p className='text-4xl font-black text-neutral-300'
                         variants={variants}
                         initial="hidden"
                         animate="visible"
                         transition={{ delay: 1.8 }}>
-                        apps.
+                        apps
                     </motion.p>
                 </div>
             </div>

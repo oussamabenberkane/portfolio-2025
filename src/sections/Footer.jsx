@@ -1,5 +1,8 @@
 import { mySocials } from "../constants";
+
 const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
     <section className="flex flex-wrap items-center justify-between gap-5 pb-3 text-sm text-neutral-400 c-space">
       <div className="mb-4 bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full" />
@@ -10,12 +13,12 @@ const Footer = () => {
       </div>
       <div className="flex gap-3">
         {mySocials.map((social, index) => (
-          <a href={social.href} key={index}>
+          <a href={social.href} key={index} target="_blank">
             <img src={social.icon} className="w-5 h-5" alt={social.name} />
           </a>
         ))}
       </div>
-      <p>© 2026 Oussama Benberkane. All rights reserved.</p>
+      <p>© {year} Oussama Benberkane. All rights reserved.</p>
     </section>
   );
 };
