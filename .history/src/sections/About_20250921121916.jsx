@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import Card from '../components/Card'
 import { Globe } from '../components/Globe'
-import ResumeDownloadButton from '../components/ResumeDownloadButton'
+import CopyEmailButton from '../components/CopyEmailButton'
 import { Frameworks } from '../components/Frameworks'
 
 const About = () => {
@@ -123,9 +123,9 @@ const About = () => {
             <div className='grid-special-color grid-4'>
                 <div className='flex flex-col items-center justify-center gap-4 size-full'>
                     <p className='text-center headText'>
-                        Interested in working together?
+                        Do you want to start a project together?
                     </p>
-                    <ResumeDownloadButton />
+                    <CopyEmailButton />
                 </div>
             </div>
             {/* Grid 5 */}
